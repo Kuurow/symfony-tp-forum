@@ -1,0 +1,26 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.userList {
+    display: block;
+    box-shadow: 1px 3px 10px -3px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 1px 3px 10px -3px rgba(0,0,0,0.66);
+    -moz-box-shadow: 1px 3px 10px -3px rgba(0,0,0,0.66);
+    border-collapse: collapse;
+}
+.userList thead {
+    background-color: grey;
+    color: #fff;
+}
+
+.userList td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 15%;
+}
+
+.userList .userListAbout {
+    width: 30%;
+}

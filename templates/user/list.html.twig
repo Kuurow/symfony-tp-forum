@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony-Forum - User/List{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+</style>
+
+<div class="example-wrapper">
+    
+    <table class="userList">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Pseudo</td>
+                <td>Passwd</td>
+                <td>Date</td>
+                <td>About</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{user.id}}</td>
+                    <td>{{user.pseudo}}</td>
+                    <td>{{user.passwd}}</td>
+                    <td>{{user.date|date('d-m-Y')}}</td>
+                    <td class="userListAbout">{{user.about}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>   
+    </table>
+
+</div>
+{% endblock %}
