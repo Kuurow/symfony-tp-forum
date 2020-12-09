@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Theme{% endblock %}
+
+{% block body %}
+    <h1 class="centered-h1">Create new Theme</h1>
+    <hr/>
+
+    {{ include('theme/_form.html.twig') }}
+
+    <a href="{{ path('theme_index') }}" class="btn btn-secondary my-2">Back to list</a>
+{% endblock %}

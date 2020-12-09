@@ -3,13 +3,11 @@
 {% block title %}New User{% endblock %}
 
 {% block body %}
+    <h1 class="centered-h1">Create new User</h1>
+    <hr/>
 
-    <div class="centered">
-        <h1 class="centered-h1">Create new User</h1>
-        <hr/>
+    {{ include('user/_form.html.twig') }}
 
-        {{ include('user/_form.html.twig') }}
-
-        <a href="{{ path('user_index') }}" class="btn btn-secondary my-2">Back to list</a>
-    </div>
+    <a href="{{ path('user_index') }}" class="btn btn-secondary my-2">Back to list</a>
+    
 {% endblock %}
