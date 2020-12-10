@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=MessageRepository::class)
+ * @ORM\Table(name="tbl_message")
  */
 class Message
 {
